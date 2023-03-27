@@ -1,0 +1,202 @@
+#root{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.appTitle{
+  text-align: center;
+  margin-top: 10px;
+}
+.container{
+  display: flex;
+  margin-top: 40px;
+}
+
+.leftContent{
+  width: 900px;
+  padding: 20px;
+  background-color: #57C5B6;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.rightContent{
+  width: calc(100% - 900px);
+}
+.leftContent .mainHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:#159895;
+  align-items: center;
+  border-radius: 10px;
+}
+.leftContent .textTitle{
+  margin: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+.leftContent .mainHeader .todayDate{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding: 10px;
+ margin-left: 20px;
+  height: 69px;
+}
+.leftContent .mainHeader .todayDate .monthYear{
+    font-size: 28px;
+    margin-bottom: 5px;
+    
+}
+.mainHeader .inputSection{
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.mainHeader .inputSection input{
+  height: 32px;
+  width: 390px;
+  font-size: 18px;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+.mainHeader .inputSection button{
+  height: 32px;
+  width: 90px;
+  font-size: 16px;
+  padding: 5px;
+  border:0;
+  outline: 0;
+  margin-left: 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color:rgb(234, 236, 237) ;
+}
+.mainHeader .inputSection button:hover{
+  /* opacity: 0.6; */
+  background-color: rgb(134, 176, 235);
+}
+.resultSection{
+  display: flex;
+  flex-direction: column;
+
+}
+.resultSection .textContent{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  /* gap: 20px; */
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+
+/* right section styling  */
+
+.rightContent{
+  background-color: rgb(134, 176, 235);
+  padding: 20px;
+  border-radius: 10px;
+}
+.rightContent .rightHeader .locationTime{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 69px;
+  background-color: rgba(223, 223, 237, 0.699);
+  padding: 10px;
+  border-radius: 10px;
+}
+.rightContent .rightHeader .locationTime:first-child{
+  font-size: 20px;
+}
+.rightContent .rightHeader .temperature{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+
+}
+.rightContent .rightHeader .temperature .templogoNum{
+  font-size: 25px;
+}
+.rightContent .rightHeader .temperature .tempInfo .numberdeg{
+  font-size: 18px;
+}
+
+.rightContent .sunriseSunset{
+  font-size: 21px;
+  margin-top: 10px;
+  text-align: center;
+}
+.rightContent .sunriseSunset .hhh{
+  margin-bottom: 10px;
+
+}
+
+@media screen  and (max-width:768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .leftContent{
+    width:90%;
+    padding: 10px;
+    background-color: #57C5B6;
+    border-radius: 10px;
+    margin: 20px;
+  }
+   .rightContent{
+    width:90%;
+    padding: 10px;
+    margin: 20px;
+  }
+  .leftContent .mainHeader{
+    width: 100%;
+    background-color:#159895;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainHeader .inputSection {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainHeader .inputSection input{
+    height: 32px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .leftContent .textTitle{
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .leftContent .mainHeader .todayDate{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 10px;
+   margin-left: 20px;
+    height: 69px;
+  }
+ 
+  .resultSection .textContent{
+    display: grid;
+ 
+  }  
+}
